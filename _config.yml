@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "Samuel Jin"
 title_separator          : "-"
-name                     : &name "Shengmiao ('Samuel') Jin"
+name                     : &name "Samuel Jin"
 description              : &description "personal description"
 url                      : https://leumasnij.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
