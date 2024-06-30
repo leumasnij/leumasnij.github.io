@@ -11,8 +11,7 @@ Equal contribution is indicated by *
 <img align="left" style="width:230px; height:auto; margin-right:30px" src="/images/perception.gif">
 **An Intelligent Robotic System for Perceptive Pancake Batter Stirring and Precise Pouring**  
 Xinyuan Luo *, __Shengmiao Jin *__, Hung-Jui Huang, and Wenzhen Yuan                          
-IEEE/RSJ International Conference on Intelligent Robots and Systems (**IROS**), 2024 <span style="color:red">(Oral Presentation)</span>  
-[[Paper]]() [[Video]]()  
+IEEE/RSJ International Conference on Intelligent Robots and Systems (**IROS**), 2024 <span style="color:red">(Oral Presentation)</span>  [[Paper]]() [[Video]]()  
 <br/><br/>
 
 
