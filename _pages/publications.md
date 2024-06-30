@@ -3,12 +3,16 @@ layout: archive
 title: "Publications"
 permalink: /publications/
 author_profile: true
-output: html_document
-bibliography: references.bib  
----
-* Indicate equal contribution
 
-### **An Intelligent Robotic System for Perceptive Pancake Batter Stirring and Precise Pouring**  
-*Xinyuan Luo*, __Shengmiao Jin*__, Hung-Jui Huang, Wenzhen Yuan
-*In Submission*
-![alt text](/images/pouring.gif "Title")
+---
+Equal contribution is indicated by *
+
+<br/><br/>
+<img align="left" style="width:230px; height:auto; margin-right:30px" src="/images/pouring.gif">
+**An Intelligent Robotic System for Perceptive Pancake Batter Stirring and Precise Pouring**  
+Xinyuan Luo *, __Shengmiao Jin *__, Hung-Jui Huang and Wenzhen Yuan 
+IEEE/RSJ International Conference on Intelligent Robots and Systems (**IROS**), 2024
+[[Paper]]() [[Video]]()  
+<br/><br/>
+
+
