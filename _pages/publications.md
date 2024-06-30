@@ -8,8 +8,8 @@ author_profile: true
 Equal contribution is indicated by *
 
 <br/><br/>
-<img align="left" style="width:160; height:auto; margin-right:30px" src="/images/perception.gif">
-<img align="center" style="width:200px; height:auto; margin-right:30px" src="/images/pouring.gif">
+<img align="left" style="width:150px; height:auto; margin-right:30px" src="/images/perception.gif">
+<img align="center" style="width:150px; height:auto; margin-right:30px" src="/images/pouring.gif">
 **An Intelligent Robotic System for Perceptive Pancake Batter Stirring and Precise Pouring**  
 Xinyuan Luo *, __Shengmiao Jin *__, Hung-Jui Huang, and Wenzhen Yuan 
 
