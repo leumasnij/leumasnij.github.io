@@ -15,8 +15,6 @@ Education
 ======
 * B.S. in Electrical Engineering, University of Illinois, Urbana-Champaign, May 2025 expected
   * Minor in Computer Science
-  * Edmund J. James Scholar, 2022 Spring -- Present
-  * Dean's List,              2021 Fall, 2022 Spring
 
 * High School Diploma, West Nottingham Academy, May 2021
   * Graduated as Valedictorian
