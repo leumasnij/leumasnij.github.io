@@ -17,7 +17,7 @@ IEEE/RSJ International Conference on Intelligent Robots and Systems (**IROS**), 
 <br/><br/>
 <img align="left" style="width:200px; height:140px; margin-right:30px" src="/images/active_t.png">
 **Learning to Double Guess: An Active Perception Approach for Estimating the Center of Mass of Arbitrary Object**  
-__Shengmiao Jin __, Yuchen Mo, and Wenzhen Yuan                          
+__Shengmiao Jin__, Yuchen Mo, and Wenzhen Yuan                          
 Submitted to ICRA25
 <br/><br/>
 
