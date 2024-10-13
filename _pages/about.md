@@ -7,6 +7,9 @@ redirect_from:
   - /about/
   - /about.html
 ---
+**Hello Hola Bonjour Aloha!**
+
+<span style="color:red">**I am actively seeking Ph.D. position for Fall 2025!**</span>.
 
 My name is Shengmiao ('Samuel') Jin, also likes to be called 'Leumas'. 
 I am currently an Undergraduate student at University of Illinois Urbana-Champaign(UIUC) majoring in Electrical Engineering. I am generally interested in Robotics, Tactile Sensing, Computer Vision, and their intersection in Tactile-informed Robot Manipulation tasks. My goal is to develop system to help human with common daily tasks that require the feeling of touch.
