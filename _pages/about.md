@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-**Hello Hola Bonjour Aloha!**
+**Aloha to whomever saw this!**
 
 <span style="color:red">**I am actively seeking Ph.D. position for Fall 2025!**</span>.
 
