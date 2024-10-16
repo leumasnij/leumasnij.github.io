@@ -1,13 +1,12 @@
 ---
 permalink: /
-title: "Aloha"
+title: "Aloha!"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-**Aloha to whomever saw this!**
 
 <span style="color:red">**I am actively seeking Ph.D. position for Fall 2025!**</span>.
 
