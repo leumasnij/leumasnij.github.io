@@ -6,11 +6,11 @@ author_profile: true
 permalink: /misc/
 
 ---
-Here is some fun facts about me:
+Here are some fun facts about me:
 
-I was born and raised in the beautiful of Shenzhen in southern China next to Hong Kong. Everytime I need to travel internationally I would fly from HKG, and I have experienced (many times) one of the longest flight routes in the world: HKG-JFK. Spoiler alert: NOT FUN.
+I was born and raised in the beautiful city of Shenzhen in southern China, right next to Hong Kong. Whenever I need to travel internationally, I usually fly out of HKG, and I've experienced (many times) one of the longest flight routes in the world: HKG–JFK. Spoiler alert: not fun.
 
-My Chinese name is 金聖苗（金圣苗）. When I was born my grandma find a Chinese Psychic(算命) to give my parents a list of Chinese characters that will give me a better future, the character need to have specific number of lines, so that is why I used the traditional character here. My English preferred name 'Samuel' sounds very similar to 'Shengmiao' and my mom picks it out of the Bible. For most international students the English name is a way for people not mispronocing their actual name, but for me my parents had been called me 'Samuel' since I was young and they hardly used my actual name. That is why I got used to be called 'Samuel' more than 'Shengmiao'. The name "$\textbf{Leumas}$" is insipred by Horace Miner's work [Body Ritual Among the Nacirema](https://www.sfu.ca/~palys/Miner-1956-BodyRitualAmongTheNacirema.pdf).
+My Chinese name is 金聖苗 (金圣苗). When I was born, my grandma found a Chinese psychic (算命) who gave my parents a list of characters that would supposedly bring me a better future. These characters needed to have a specific number of strokes, which is why I use the traditional form here. My preferred English name, "Samuel," sounds very similar to "Shengmiao," and my mom picked it from the Bible. For many international students, an English name helps prevent others from mispronouncing their real name, but in my case, my parents had called me "Samuel" since I was young and rarely used my actual name. As a result, I'm more used to being called "Samuel" than "Shengmiao." The name Leumas is inspired by Horace Miner’s work Body Ritual Among the Nacirema.
 
-Despite I graduated as Valendictorian from high school, (oldest boarding school in the US!), I am not able to attend graduation in person due to Covid-19. I also never officially graduated from middle school, because I came to US for 9th grade, and in Chinese education system 9th grade is till middle school. So fingers crossed for college graduation :)
+Although I graduated as valedictorian from my high school (the oldest boarding school in the U.S.!), I was unable to attend the ceremony in person due to COVID-19. I also never officially graduated from middle school, because I moved to the U.S. for ninth grade, and in the Chinese education system, ninth grade is still part of middle school. Fingers crossed for my college graduation!
 
