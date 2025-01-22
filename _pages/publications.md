@@ -8,10 +8,10 @@ author_profile: true
 Equal contribution is indicated by *
 
 <br/><br/>
-<img align="left" style="width:200px; height:140px; margin-right:30px" src="/images/pouring.gif">
-**An Intelligent Robotic System for Perceptive Pancake Batter Stirring and Precise Pouring**  
-Xinyuan Luo *, __Shengmiao Jin *__, Hung-Jui Huang, and Wenzhen Yuan                          
-IEEE/RSJ International Conference on Intelligent Robots and Systems (**IROS**), 2024 <span style="color:red">(Best Entertainment and Amusement Papers Finalists)</span>  [[Paper]](https://arxiv.org/abs/2407.01755) Video:[[Youtube]](https://www.youtube.com/watch?si=ikU3lOzVro_94tGz&v=-295mNAnFLk&feature=youtu.be) [[bilibili]](https://www.bilibili.com/video/BV1qChee8Ewg) [[Website]](https://luoxinyuan.github.io/pancake/)
+<img align="left" style="width:200px; height:140px; margin-right:30px" src="/images/sitr.png">
+**Sensor-Invariant Tactile Representation**  
+Harsh Gupta *, Yuchen Mo *, __Shengmiao Jin__, and Wenzhen Yuan                          
+International Conference on Learning Representations (ICLR), 2025 <span style="color:red">(Best Entertainment and Amusement Papers Finalists)</span>  [[Paper (Coming Soon)]]() [[Website(Coming Soon)]]()
 <br/><br/>
 
 <br/><br/>
@@ -20,5 +20,20 @@ IEEE/RSJ International Conference on Intelligent Robots and Systems (**IROS**), 
 __Shengmiao Jin__, Yuchen Mo, and Wenzhen Yuan                          
 Submitted to ICRA25
 <br/><br/>
+
+<br/><br/>
+<img align="left" style="width:200px; height:140px; margin-right:30px" src="/images/pouring.gif">
+**An Intelligent Robotic System for Perceptive Pancake Batter Stirring and Precise Pouring**  
+Xinyuan Luo *, __Shengmiao Jin *__, Hung-Jui Huang, and Wenzhen Yuan                          
+IEEE/RSJ International Conference on Intelligent Robots and Systems (**IROS**), 2024 <span style="color:red">(Best Entertainment and Amusement Papers Finalists)</span>  [[Paper]](https://arxiv.org/abs/2407.01755) Video:[[Youtube]](https://www.youtube.com/watch?si=ikU3lOzVro_94tGz&v=-295mNAnFLk&feature=youtu.be) [[bilibili]](https://www.bilibili.com/video/BV1qChee8Ewg) [[Website]](https://luoxinyuan.github.io/pancake/)
+<br/><br/>
+
+<br/><br/>
+<img align="left" style="width:200px; height:140px; margin-right:30px" src="/images/doorbot.gif">
+**DoorBot: Closed-Loop Task Planning and Manipulation for Door Opening in the Wild with Haptic Feedback**  
+Zhi Wang *, Yuchen Mo *, __Shengmiao Jin__, and Wenzhen Yuan                          
+Submitted to ICRA25
+<br/><br/>
+
 
 
