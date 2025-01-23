@@ -10,14 +10,14 @@ Equal contribution is indicated by *
 <br/><br/>
 <img align="left" style="width:200px; height:140px; margin-right:30px" src="/images/sitr.png">
 **Sensor-Invariant Tactile Representation**  
-Harsh Gupta *, [[Yuchen Mo *]](https://scholar.google.com/citations?user=zzpPyQwAAAAJ&hl=en), __Shengmiao Jin__, and [[Wenzhen Yuan]](https://siebelschool.illinois.edu/about/people/all-faculty/yuanwz)                          
+[Harsh Gupta *](hgupt3.github.io), [Yuchen Mo *](https://scholar.google.com/citations?user=zzpPyQwAAAAJ&hl=en), __Shengmiao Jin__, and [Wenzhen Yuan](https://siebelschool.illinois.edu/about/people/all-faculty/yuanwz)                          
 International Conference on Learning Representations (ICLR), 2025 [[Paper (Coming Soon)]]() [[Website(Coming Soon)]]()
 <br/><br/>
 
 <br/><br/>
 <img align="left" style="width:200px; height:140px; margin-right:30px" src="/images/active_t.png">
 **Learning to Double Guess: An Active Perception Approach for Estimating the Center of Mass of Arbitrary Object**  
-__Shengmiao Jin__, Yuchen Mo, and Wenzhen Yuan                          
+__Shengmiao Jin__, [Yuchen Mo](https://scholar.google.com/citations?user=zzpPyQwAAAAJ&hl=en), and [Wenzhen Yuan](https://siebelschool.illinois.edu/about/people/all-faculty/yuanwz)                          
 Submitted to ICRA25 [[Paper (Coming Soon)]]() [[Website(Coming Soon)]]()
 <br/><br/>
 
@@ -31,7 +31,7 @@ IEEE/RSJ International Conference on Intelligent Robots and Systems (**IROS**), 
 <br/><br/>
 <img align="left" style="width:200px; height:140px; margin-right:30px" src="/images/doorbot.gif">
 **DoorBot: Closed-Loop Task Planning and Manipulation for Door Opening in the Wild with Haptic Feedback**  
-[[Zhi Wang]](tx-leo.github.io) *, Yuchen Mo *, __Shengmiao Jin__, and Wenzhen Yuan                          
+[Zhi Wang](tx-leo.github.io) *, [Yuchen Mo *](https://scholar.google.com/citations?user=zzpPyQwAAAAJ&hl=en), __Shengmiao Jin__, and [Wenzhen Yuan](https://siebelschool.illinois.edu/about/people/all-faculty/yuanwz)                          
 Submitted to ICRA25 [[Paper]](https://tx-leo.github.io/data/ICRA2025_DoorBot.pdf) [[Website]](https://tx-leo.github.io/DoorBot/)
 <br/><br/>
 
