@@ -20,3 +20,9 @@ Outside of research, I also like to read, cook, travel, play, and watch sports(i
 
 Photo Credits: Amin; No UR5e Robots were harmed during the photo taken
 
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=q34gFVYOjplWwCXaPKaCFqMOnzKQOhNFIWApOYyNmss&cl=ffffff&w=a"></script>
+<style>
+          #clustrmaps-widget-v2 {
+            display: none !important;
+          }
+        </style>
