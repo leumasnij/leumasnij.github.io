@@ -9,7 +9,7 @@ Equal contribution is indicated by *
 
 <br/><br/>
 <img align="left" style="width:200px; height:140px; margin-right:30px" src="/images/active_t.png">
-**Learning to Double Guess: An Active Perception Approach for Estimating the Center of Mass of Arbitrary Object**  
+**Learning to Double Guess: An Active Perception Approach for Estimating the Center of Mass of Arbitrary Objects**  
 __Shengmiao Jin__, [Yuchen Mo](https://scholar.google.com/citations?user=zzpPyQwAAAAJ&hl=en), and [Wenzhen Yuan](https://siebelschool.illinois.edu/about/people/all-faculty/yuanwz)                          
 IEEE International Conference on Robotics and Automation (ICRA), 2025 [[Paper]](https://leumasnij.github.io/double_guessing/static/pdf/LDGAP.pdf) [[Website]](https://leumasnij.github.io/double_guessing/)
 <br/><br/>
