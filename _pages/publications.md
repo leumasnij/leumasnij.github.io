@@ -32,7 +32,7 @@ IEEE/RSJ International Conference on Intelligent Robots and Systems (**IROS**), 
 <img align="left" style="width:200px; height:140px; margin-right:30px" src="/images/doorbot.gif">
 **DoorBot: Closed-Loop Task Planning and Manipulation for Door Opening in the Wild with Haptic Feedback**  
 [Zhi Wang](https://tx-leo.github.io) *, [Yuchen Mo](https://scholar.google.com/citations?user=zzpPyQwAAAAJ&hl=en) *, __Shengmiao Jin__, and [Wenzhen Yuan](https://siebelschool.illinois.edu/about/people/all-faculty/yuanwz)                          
-IEEE International Conference on Robotics and Automation (ICRA), 2025 [[Paper]](https://tx-leo.github.io/data/ICRA2025_DoorBot.pdf) [[Website]](https://tx-leo.github.io/DoorBot/)
+IEEE International Conference on Robotics and Automation (**ICRA**), 2025 [[Paper]](https://tx-leo.github.io/data/ICRA2025_DoorBot.pdf) [[Website]](https://tx-leo.github.io/DoorBot/)
 <br/><br/>
 
 
