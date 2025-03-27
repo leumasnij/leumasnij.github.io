@@ -8,9 +8,8 @@ redirect_from:
   - /about.html
 ---
 
-<span style="color:red">**I am actively seeking Ph.D. position for Fall 2025!**</span>.
 
-My name is Shengmiao ('Samuel') Jin, and I am currently an Undergraduate student at the University of Illinois Urbana-Champaign(UIUC) majoring in Electrical Engineering. I am generally interested in Robotics, Tactile Sensing, Computer Vision, and their intersection in Tactile-informed Robot Manipulation tasks. My goal is to develop systems to help humans with common daily tasks that require the feeling of touch.
+My name is Shengmiao ('Samuel') Jin, and I am an Incoming Robotics Ph.D. Student at Cornell University. I am currently an Undergraduate student at the University of Illinois Urbana-Champaign(UIUC) majoring in Electrical Engineering. I am generally interested in Robotics, Tactile Sensing, Computer Vision, and their intersection in Tactile-informed Robot Manipulation tasks. My goal is to develop systems to help humans with common daily tasks that require the feeling of touch.
 
 I am currently working in the [RoboTouch Lab](https://robotouchlab.web.illinois.edu/) with [Prof. Wenzhen Yuan](https://cs.illinois.edu/about/people/all-faculty/yuanwz) on Dexterous Manipulation with Tactile Sensing. I have also worked on liquid manipulation, specifically, a pancake-making system that can make arbitrary shapes of pancakes. (We have very cool demos!) And several other projects in different fields of robotics. Please check out the publication page and my CV for more info!
 
