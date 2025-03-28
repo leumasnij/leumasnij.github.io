@@ -1,6 +1,5 @@
 ---
 permalink: /
-title: "Aloha!"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
