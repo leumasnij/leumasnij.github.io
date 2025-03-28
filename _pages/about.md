@@ -6,8 +6,9 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
-# Welcome to My Page! 👋
+<div style="text-align: center; margin-bottom: 30px;">
+  <h1 style="color: #2c3e50; font-size: 2.5em;">Aloha! Welcome to my home page!</h1>
+</div>
 
 ## About Me
 

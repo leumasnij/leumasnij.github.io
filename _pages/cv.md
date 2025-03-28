@@ -6,8 +6,9 @@ redirect_from:
   - /resume
 ---
 
+{% include base_path %}
+
 <div style="text-align: center; margin-bottom: 30px;">
-  <h1 style="color: #2c3e50; font-size: 2.5em;">Curriculum Vitae</h1>
   <p style="color: #7f8c8d; font-size: 1.2em;">
     <a href="https://leumasnij.github.io/files/CV_SJ.pdf" style="color: #3498db; text-decoration: none;">
       <i class="fas fa-file-pdf"></i> Download Full CV
