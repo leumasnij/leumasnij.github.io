@@ -1,14 +1,13 @@
 ---
 layout: archive
-title: "Selected Publications"
 permalink: /publications/
 author_profile: true
 
 ---
 
-<div style="text-align: center; margin-bottom: 30px;">
-  <h1 style="color: #2c3e50; font-size: 2.5em;">Selected Publications</h1>
-  <p style="color: #7f8c8d; font-size: 1.1em;">Equal contribution is indicated by *</p>
+<div style="text-align: center; margin-bottom: 30px; background: linear-gradient(135deg, #6c5ce7, #a8e6cf); padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+  <h1 style="color: white; font-size: 2.8em; text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">Selected Publications</h1>
+  <p style="color: white; font-size: 1.2em; margin-top: 10px;">Equal contribution is indicated by *</p>
 </div>
 
 <div style="background-color: #f8f9fa; padding: 20px; border-radius: 10px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
@@ -17,7 +16,7 @@ author_profile: true
     <div>
       <h3 style="color: #2c3e50; margin-top: 0;">Learning to Double Guess: An Active Perception Approach for Estimating the Center of Mass of Arbitrary Objects</h3>
       <p style="color: #34495e; margin-bottom: 10px;">
-        <strong>__Shengmiao Jin__</strong>, <a href="https://scholar.google.com/citations?user=zzpPyQwAAAAJ&hl=en" style="color: #3498db; text-decoration: none;">Yuchen Mo</a>, and <a href="https://siebelschool.illinois.edu/about/people/all-faculty/yuanwz" style="color: #3498db; text-decoration: none;">Wenzhen Yuan</a>
+        <strong>Shengmiao Jin</strong>, <a href="https://scholar.google.com/citations?user=zzpPyQwAAAAJ&hl=en" style="color: #3498db; text-decoration: none;">Yuchen Mo</a>, and <a href="https://siebelschool.illinois.edu/about/people/all-faculty/yuanwz" style="color: #3498db; text-decoration: none;">Wenzhen Yuan</a>
       </p>
       <p style="color: #7f8c8d;">
         IEEE International Conference on Robotics and Automation (<strong>ICRA</strong>), 2025<br>
@@ -37,7 +36,7 @@ author_profile: true
       <p style="color: #34495e; margin-bottom: 10px;">
         <a href="https://hgupt3.github.io" style="color: #3498db; text-decoration: none;">Harsh Gupta</a> *, 
         <a href="https://scholar.google.com/citations?user=zzpPyQwAAAAJ&hl=en" style="color: #3498db; text-decoration: none;">Yuchen Mo</a> *, 
-        <strong>__Shengmiao Jin__</strong>, and 
+        <strong>Shengmiao Jin</strong>, and 
         <a href="https://siebelschool.illinois.edu/about/people/all-faculty/yuanwz" style="color: #3498db; text-decoration: none;">Wenzhen Yuan</a>
       </p>
       <p style="color: #7f8c8d;">
