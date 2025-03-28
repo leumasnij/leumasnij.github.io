@@ -15,7 +15,7 @@ redirect_from:
 <div style="background-color: #f8f9fa; padding: 20px; border-radius: 10px; margin-bottom: 30px;">
   <h2 style="color: #2c3e50;">👋 About Me</h2>
   <p style="font-size: 1.1em;">
-    My name is <span style="color: #3498db; font-weight: bold;">Shengmiao ('Samuel') Jin</span>, and I am an Incoming Robotics Ph.D. Student at Cornell University. Currently, I am an Undergraduate student at the University of Illinois Urbana-Champaign (UIUC) majoring in Electrical Engineering.
+    My name is <span style="color: #3498db; font-weight: bold;">Shengmiao ('Samuel') Jin</span>, and I am an Incoming Robotics Ph.D. Student (in Field Computer Science) at Cornell University. Currently, I am an Undergraduate student at the University of Illinois Urbana-Champaign (UIUC) majoring in Electrical Engineering.
   </p>
 </div>
 
