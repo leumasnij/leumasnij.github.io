@@ -9,8 +9,6 @@ redirect_from:
 
 # Welcome to My Page! 👋
 
-Exploring the intersection of Robotics, AI, and Human-Robot Interaction
-
 ## About Me
 
 My name is **Shengmiao ('Samuel') Jin**, and I am an Incoming <span style="color: #3498db">Robotics Ph.D. Student (in the Field of Computer Science) </span> at <span style="color:rgb(255, 0, 0)">Cornell University</span>. Currently, I am an Undergraduate student at the <span style="color:rgb(237, 74, 46)">University of Illinois Urbana-Champaign (UIUC)</span> majoring in Electrical Engineering.

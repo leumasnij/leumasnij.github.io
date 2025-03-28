@@ -6,8 +6,6 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
-
 <div style="text-align: center; margin-bottom: 30px;">
   <h1 style="color: #2c3e50; font-size: 2.5em;">Curriculum Vitae</h1>
   <p style="color: #7f8c8d; font-size: 1.2em;">
