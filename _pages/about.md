@@ -8,35 +8,37 @@ redirect_from:
   - /about.html
 ---
 
-# Welcome to My Page!
+# Welcome to My Page! 👋
 
 Exploring the intersection of Robotics, AI, and Human-Robot Interaction
 
-## 👋 About Me
+## About Me
 
-My name is **Shengmiao ('Samuel') Jin**, and I am an Incoming Robotics Ph.D. Student (in the Field of Computer Science) at Cornell University. Currently, I am an Undergraduate student at the University of Illinois Urbana-Champaign (UIUC) majoring in Electrical Engineering.
+My name is **Shengmiao ('Samuel') Jin**, and I am an Incoming <span style="color: #3498db">Robotics Ph.D. Student (in the Field of Computer Science) </span> at <span style="color:rgb(255, 0, 0)">Cornell University</span>. Currently, I am an Undergraduate student at the <span style="color:rgb(237, 74, 46)">University of Illinois Urbana-Champaign (UIUC)</span> majoring in Electrical Engineering.
 
-## 🎯 Research Interests
+## Research Interests
 
 I am passionate about:
 
-* 🤖 Robotics
-* 🖐️ Tactile Sensing
-* 👁️ Computer Vision
-* 🔄 Tactile-informed Robot Manipulation
+* 🤖 <span style="color: #3498db">Dexterous Manipulation</span>
+* 🖐️ <span style="color: #2ecc71">Tactile Sensing</span>
+* 🧠 <span style="color: #e74c3c">Robot Learning</span>
+* ⚙️ <span style="color: #9b59b6">Model-based Control</span>
 
-*My goal is to develop systems to help humans with common daily tasks that require the feeling of touch.*
+*My goal is to develop systems to help humans with complex daily tasks that require the feeling of touch.*
 
-## 🔬 Current Research
+## Current Research
 
-I am currently working in the [RoboTouch Lab](https://robotouchlab.web.illinois.edu/) with [Prof. Wenzhen Yuan](https://cs.illinois.edu/about/people/all-faculty/yuanwz) on Dexterous Manipulation with Tactile Sensing. My research includes:
+I am currently working in the <span style="color: #3498db">[RoboTouch Lab](https://robotouchlab.web.illinois.edu/)</span> with <span style="color: #2ecc71">[Prof. Wenzhen Yuan](https://cs.illinois.edu/about/people/all-faculty/yuanwz)</span> on <span style="color: #e74c3c">Dexterous Manipulation with Tactile Sensing</span>. My research includes:
 
-* 🥞 Liquid manipulation and pancake-making system
-* 🤖 Various robotics projects
+* <span style="color: #3498db">Food (pancake batter) manipulation</span>
+* <span style="color: #e74c3c">Active Haptic Perception</span>
+* <span style="color: #9b59b6">Tactile Representation Learning</span>
 
 Check out my [publications](/publications/) and [CV](/cv/) for more details!
 
 
+## Personal Interests
 
 Outside of research, I enjoy:
 
