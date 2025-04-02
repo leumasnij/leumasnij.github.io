@@ -14,7 +14,7 @@ description              : &description "personal description"
 url                      : https://leumasnij.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "leumasnij/leumasnij.github.io"
-teaser                   :  "ece.jpeg"# filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser                   :  "images/cornell.png"# filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
@@ -69,11 +69,11 @@ analytics:
 author:
   name             : "Shengmiao ('Samuel') Jin"
   avatar           : "avater3.jpg"
-  bio              : "Aspiring Engineer, Roboticist and Computer Scientist, Undergrad @ UIUC"
+  bio              : "Incoming Robotics Ph.D. Student @ Cornell University, BS EE @ UIUC"
   location         : "Champaign, IL"
   employer         :
   pubmed           : 
-  googlescholar    : 
+  googlescholar    : "https://scholar.google.com/citations?user=3_C65DEAAAAJ&hl=en"
   email            :  "jin45@illinois.edu"
   researchgate     :  
   uri              :
@@ -83,7 +83,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "leumasnij.github.io"
+  github           : "https://github.com/leumasnij"
   google_plus      :
   keybase          :
   instagram        :
@@ -96,7 +96,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : #"replacethistwitterhandle"
+  twitter          : https://x.com/SamuelJin234500
   vine             :
   weibo            :
   xing             :

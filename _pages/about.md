@@ -14,7 +14,7 @@ redirect_from:
 
 ## About Me
 
-My name is **Shengmiao ('Samuel') Jin**, and I am an Incoming <span style="color: #3498db">Robotics Ph.D. Student (in the Field of Computer Science) </span> at <span style="color:rgb(255, 0, 0)">Cornell University</span>. Currently, I am an Undergraduate student at the <span style="color:rgb(237, 74, 46)">University of Illinois Urbana-Champaign (UIUC)</span> majoring in Electrical Engineering. I am currently working in the [RoboTouch Lab](https://robotouchlab.web.illinois.edu/) with [Prof. Wenzhen Yuan](https://cs.illinois.edu/about/people/all-faculty/yuanwz)on Dexterous Manipulation with Tactile Sensing.
+My name is **Shengmiao ('Samuel') Jin**, and I am an Incoming <span style="color: #3498db">Robotics Ph.D. Student (in the Field of Computer Science) </span> at <span style="color:rgb(255, 0, 0)">Cornell University</span>. Currently, I am an Undergraduate student at the <span style="color:rgb(237, 74, 46)">University of Illinois Urbana-Champaign (UIUC)</span> majoring in Electrical Engineering. I am currently working in the [RoboTouch Lab](https://robotouchlab.web.illinois.edu/) with [Prof. Wenzhen Yuan](https://cs.illinois.edu/about/people/all-faculty/yuanwz) on Dexterous Manipulation with Tactile Sensing.
 
 ## Research Interests
 

@@ -18,6 +18,12 @@ redirect_from:
 
 ## Education
 
+### Cornell University
+* **Incoming Ph.D. in Robotics (in the Field of Computer Science) ** (Starting Fall 2025)
+  * Cornell University
+  * Research Focus: Robot Learning, Manipulation, and Control
+
+
 ### University of Illinois, Urbana-Champaign
 * **B.S. in Electrical Engineering** (Expected May 2025)
   * Minor in Computer Science
