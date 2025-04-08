@@ -27,15 +27,11 @@ redirect_from:
 ### University of Illinois, Urbana-Champaign
 * **B.S. in Electrical Engineering** (Expected May 2025)
   * Minor in Computer Science
-  * GPA: 3.95/4.00
-  * Dean's List: All Semesters
-  * Relevant Coursework: Robotics, Computer Vision, Machine Learning, Control Systems
 
 ### West Nottingham Academy
 * **High School Diploma** (May 2021)
   * Graduated as Valedictorian
-  * National Honor Society
-  * AP Scholar with Distinction
+
 
 ## Research Experience
 
