@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 <div style="text-align: center; margin-bottom: 30px;">
-  <h1 style="color: #2c3e50; font-size: 2.0em;">Aloha! Welcome to my home page!</h1>
+  <h1 style="color:rgb(245, 125, 211); font-size: 2.0em;">Aloha! Welcome to my home page!</h1>
 </div>
 
 ## About Me

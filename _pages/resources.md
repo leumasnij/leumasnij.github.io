@@ -30,12 +30,21 @@ I still remember how lost and confused I was during the summer before my PhD app
   </iframe>
 </div>
 
-## Tips and Advice
+### Inquiry Email Template (aka 套瓷)
 
-*Feel free to add any advice or tips you want to share about the application process*
+Dear Professor [Full Name of the Professor],
 
-## Additional Resources
+My name is Shengmiao Jin (Samuel). I am currently an undergrad at UIUC majoring in Electrical Engineering. My current research interests are Robot Manipulation, Tactile Sensing, and Robot Learning. I am writing to express my interest in pursuing a Ph.D. in Robotics under your guidance.
 
-*You can add links to other helpful resources, websites, or documents*
+My past research spans Robotics, Computer Vision, and Machine Learning. I have a CGPA of 3.93/4.0 and a Computer Science minor with a minor GPA of 4.0/4.0. I am fortunate to work with Professor Wenzhen Yuan in the RoboTouch Lab. I recently published a co-first authored paper on Robotic Manipulation on IROS 2024. This paper was on pancake making and we built a complete system in an end-to-end fashion, we got nominated for the Best Entertainment and Amusement Paper. I also have one first-authored paper submitted to ICRA25 on Active Perception. 
+
+[A Paragraph on how the professor's research interested you]
+
+Attached is a copy of my CV and Transcript to help you better understand my academic background. You can also access my personal website at leumasnij.github.io, and if you have any questions feel free to contact me as well!
+
+Thank you for your time and consideration.
+
+Sincerely,
+Samuel
 
 ---
