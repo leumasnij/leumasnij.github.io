@@ -14,7 +14,7 @@ description              : &description "personal description"
 url                      : https://leumasnij.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "leumasnij/leumasnij.github.io"
-teaser                   :  "images/cornell.png"# filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser                   :  "images/image.png" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
@@ -68,10 +68,10 @@ analytics:
 # Site Author
 author:
   name             : "Shengmiao ('Samuel') Jin"
-  avatar           : "avater3.jpg"
+  avatar           : "avater.png"
   bio              : "Incoming Robotics Ph.D. Student @ Cornell University, BS EE @ UIUC"
   location         : "Champaign, IL"
-  employer         :
+  employer         : "Cornell University"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=3_C65DEAAAAJ&hl=en"
   email            :  "jin45@illinois.edu"
@@ -89,7 +89,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "https://www.linkedin.com/in/shengmiao-jin-83994b2a4/"
   orcid            : #"http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
