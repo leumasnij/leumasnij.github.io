@@ -50,7 +50,7 @@ Outside of research, I enjoy:
 
 ---
 
-*Photo Credits: Amin; No UR5e Robots were harmed during the photo taken*
+*Photo Credits: [Leo Luo](https://tingfengluo.github.io/); No UR5e Robots were harmed during the photo taken (in fact it was already broken :) )*
 
 <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=q34gFVYOjplWwCXaPKaCFqMOnzKQOhNFIWApOYyNmss&cl=ffffff&w=a"></script>
 <style>
