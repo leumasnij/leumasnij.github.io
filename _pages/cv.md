@@ -25,7 +25,7 @@ redirect_from:
 
 
 ### University of Illinois, Urbana-Champaign
-* **B.S. in Electrical Engineering** (Expected May 2025)
+* **B.S. in Electrical Engineering** (August 2021 - May 2025)
   * Minor in Computer Science
 
 ### West Nottingham Academy
@@ -90,6 +90,6 @@ redirect_from:
 * AP Scholar with Distinction
 
 ## Languages
-* English (Native)
+* English (bilingual)
 * Chinese (Native)
   
