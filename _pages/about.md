@@ -14,10 +14,10 @@ redirect_from:
 
 ## About Me
 
-My name is **Shengmiao ('Samuel') Jin**, and I am an first-year <span style="color: #3498db">Robotics Ph.D. Student (in the Field of Computer Science) </span> at <span style="color:rgb(255, 0, 0)">Cornell University</span>. I am currently co-advised by [Professor Tapomayukh Bhattacharjee](https://sites.google.com/site/tapomayukh) and [Professor Preston Culbertson](https://pculbertson.github.io/). My research interest lies in the intersection of Dexterous Manipulation, Tactile Sensing and Robot Learning.
+My name is **Shengmiao ('Samuel') Jin**, and I am an first-year <span style="color: #006699">Robotics Ph.D. Student </span> at <span style="color:rgb(204, 0, 43)">Cornell Bowers College of CIS</span>. I am currently co-advised by [Professor Tapomayukh Bhattacharjee](https://sites.google.com/site/tapomayukh) and [Professor Preston Culbertson](https://pculbertson.github.io/). My research interest lies in the intersection of Dexterous Manipulation, Tactile Sensing and Robot Learning.
 
-I graduated from the <span style="color:rgb(237, 74, 46)">University of Illinois Urbana-Champaign (UIUC)</span> with a Bachelor of Science in Electrical Engineering in May 2025. 
-During my time at UIUC, I was fortunate to work in the [RoboTouch Lab](https://robotouchlab.web.illinois.edu/) with [Prof. Wenzhen Yuan](https://cs.illinois.edu/about/people/all-faculty/yuanwz) .
+Prior to Cornell, I obtained my Bachelor of Science in Electrical Engineering with Highest Honors from <span style="color:rgb(255, 95, 5)">University of Illinois Urbana-Champaign (UIUC)</span> in May 2025. During my time at UIUC, I was fortunate to work in the [RoboTouch Lab](https://robotouchlab.web.illinois.edu/) with [Prof. Wenzhen Yuan](https://cs.illinois.edu/about/people/all-faculty/yuanwz) .
+
 
 
 ## Past Research
