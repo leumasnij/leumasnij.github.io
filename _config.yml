@@ -40,7 +40,7 @@ staticman:
   path                   : "_data/comments/{options.slug}"
   requiredFields         : ['name', 'email', 'message']
   transforms:
-    email                : "jin45@illinois.edu"
+    email                : "sj887@cornell.edu"
   generatedFields:
     date:
       type               : "date"
@@ -69,8 +69,8 @@ analytics:
 author:
   name             : "Shengmiao ('Samuel') Jin"
   avatar           : "avater.png"
-  bio              : "Incoming Robotics Ph.D. Student @ Cornell University, BS EE @ UIUC"
-  location         : 
+  bio              : "Robotics Ph.D. Student @ Cornell University, BS EE @ UIUC"
+  location         : "Ithaca, NY"
   employer         : "Cornell University"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=3_C65DEAAAAJ&hl=en"
@@ -242,7 +242,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Chicago # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
