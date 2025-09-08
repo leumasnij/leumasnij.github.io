@@ -73,7 +73,7 @@ author:
   location         : "Ithaca, NY"
   employer         : "Cornell University"
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=3_C65DEAAAAJ&hl=en"
+  googlescholar    : "https://scholar.google.com/citations?user=XXyl39QAAAAJ&hl=en"
   email            :  "jin45@illinois.edu"
   researchgate     :  
   uri              :
@@ -162,9 +162,9 @@ kramdown:
 
 # Collections
 collections:
-#   teaching:
-#     output: true
-#     permalink: /:collection/:path/
+  teaching:
+    output: true
+    permalink: /:collection/:path/
 #   publications:
 #     output: true
 #     permalink: /:collection/:path/
@@ -196,15 +196,15 @@ defaults:
     values:
       layout: single
       author_profile: true
-#   # _teaching
-#   - scope:
-#       path: ""
-#       type: teaching
-#     values:
-#       layout: single
-#       author_profile: true
-#       share: true
-#       comments: true
+  # _teaching
+  - scope:
+      path: ""
+      type: teaching
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
 #   # _publications
   - scope:
       path: ""
