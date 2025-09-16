@@ -19,6 +19,9 @@ My name is **Shengmiao ('Samuel') Jin**, and I am an first-year <span style="col
 Prior to Cornell, I obtained my Bachelor of Science in Electrical Engineering with Highest Honors from <span style="color:rgb(255, 95, 5)">University of Illinois Urbana-Champaign (UIUC)</span> in May 2025. During my time at UIUC, I was fortunate to work in the [RoboTouch Lab](https://robotouchlab.web.illinois.edu/) with [Prof. Wenzhen Yuan](https://cs.illinois.edu/about/people/all-faculty/yuanwz) .
 
 
+*If you are interested in my research, please feel free to reach out :) I am always looking for self-motivated students from Cornell and beyond to work with!*
+<!-- You can email me at [sj528@cornell.edu](mailto:sj528@cornell.edu)! -->
+
 
 ## Past Research
 
