@@ -1,11 +1,11 @@
 ---
-layout: archive
+layout: single
 title: "Teaching"
 permalink: /teaching/
 author_profile: true
 ---
 
-{% include base_path %}
+# Teaching Experience
 
 ## CS4750 - Introduction to Robotics
 **Teaching Assistant** | Cornell University | Fall 2025
