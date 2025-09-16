@@ -5,8 +5,6 @@ permalink: /teaching/
 author_profile: true
 ---
 
-# Teaching Experience
-
 ## CS4750 - Introduction to Robotics
 **Teaching Assistant** | Cornell University | Fall 2025
 
