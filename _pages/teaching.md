@@ -5,6 +5,9 @@ permalink: /teaching/
 author_profile: true
 ---
 
+## CS5757 - Introduction to Robotics
+**Head Teaching Assistant** | Cornell University | Spring 2026
+
 ## CS4750 - Introduction to Robotics
 **Teaching Assistant** | Cornell University | Fall 2025
 

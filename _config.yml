@@ -40,7 +40,7 @@ staticman:
   path                   : "_data/comments/{options.slug}"
   requiredFields         : ['name', 'email', 'message']
   transforms:
-    email                : "sj887@cornell.edu"
+    email                : "leumasnij@cs.cornell.edu"
   generatedFields:
     date:
       type               : "date"
@@ -74,7 +74,7 @@ author:
   employer         : "Cornell University"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=XXyl39QAAAAJ&hl=en"
-  email            :  "jin45@illinois.edu"
+  email            :  "leumasnij@cs.cornell.edu"
   researchgate     :  
   uri              :
   bitbucket        :
