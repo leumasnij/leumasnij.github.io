@@ -5,10 +5,10 @@ permalink: /teaching/
 author_profile: true
 ---
 
-## CS5757 - Optimization Methods for Robotics
+## CS 5757 - Optimization Methods for Robotics
 **Head Teaching Assistant** | Cornell University | Spring 2026
 
-## CS4750 - Introduction to Robotics
+## CS 4750 - Foundations of Robotics
 **Teaching Assistant** | Cornell University | Fall 2025
 
 ## ECE 311 - Digital Signal Processing Lab
