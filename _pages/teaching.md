@@ -5,7 +5,7 @@ permalink: /teaching/
 author_profile: true
 ---
 
-## CS5757 - Introduction to Robotics
+## CS5757 - Optimization Methods for Robotics
 **Head Teaching Assistant** | Cornell University | Spring 2026
 
 ## CS4750 - Introduction to Robotics
