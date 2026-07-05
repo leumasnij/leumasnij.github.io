@@ -1,0 +1,121 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PublicationCard from "../components/PublicationCard.astro";
+import { publications } from "../data/publications";
+import { site } from "../data/site";
+import { teaching } from "../data/teaching";
+---
+
+<BaseLayout>
+  <section class="hero shell" id="about">
+    <div class="hero__content">
+      <p class="eyebrow">About Me</p>
+      <h1>Shengmiao ("Samuel") Jin</h1>
+      <p class="about-copy">
+        I am a second-year <strong class="text-cornell">Robotics Ph.D. student at Cornell University</strong>,
+        working on{" "}<strong>fine-grained, contact-rich dexterous manipulation</strong> and
+        <strong>continual adaptation</strong>. I also work on
+        <strong>tactile sensing</strong> and its integration into modern robot learning frameworks.
+        My research is supported by the <strong class="text-highlight">NSF Graduate Research Fellowship</strong>.
+      </p>
+      <p class="about-copy">
+        I am co-advised by <a class="advisor-link" href="https://sites.google.com/site/tapomayukh"><strong>Prof. Tapomayukh Bhattacharjee</strong></a> and <a class="advisor-link" href="https://pculbertson.github.io/"><strong>Prof. Preston Culbertson</strong></a>.
+        Before Cornell, I earned a <strong>B.S. in Electrical Engineering with Highest Honors</strong>{" "}
+        from the <strong class="text-uiuc">University of Illinois Urbana-Champaign</strong>, where I worked with <a class="advisor-link" href="https://cs.illinois.edu/about/people/all-faculty/yuanwz"><strong>Prof. Wenzhen Yuan</strong></a> in the <a class="advisor-link" href="https://robotouchlab.web.illinois.edu/"><strong>RoboTouch Lab</strong></a>.
+      </p>
+      <div class="button-row">
+        <a class="button" href="#publications">View Publications</a>
+        <a class="button button--secondary" href="/files/CV_SJ.pdf">Download CV</a>
+      </div>
+      <div class="social-links">
+        {site.socials.map((social) => <a href={social.href}>{social.label}</a>)}
+      </div>
+    </div>
+    <aside class="hero__card" aria-label="Profile">
+      <img src={site.author.avatar} alt="Portrait of Shengmiao Jin" />
+      <div class="hero__meta">
+        <strong>{site.author.name}</strong>
+        <span>{site.author.role} · {site.author.affiliation}</span>
+        <span>{site.author.location}</span>
+      </div>
+    </aside>
+  </section>
+
+  <section class="section shell" id="research">
+    <div class="section-heading">
+      <p class="eyebrow">Research</p>
+      <h2>Contact-rich robot intelligence.</h2>
+    </div>
+    <div class="prose">
+      <p>
+        My research focuses on building robots that can learn from contact-rich interaction
+        and adapt their behavior in the physical world. I am especially interested in
+        <strong>fine-grained dexterous manipulation</strong>, <strong>tactile sensing</strong>,
+        and <strong>continual adaptation</strong>: how robots can use touch, vision, and action
+        to reason about objects, recover from uncertainty, and improve across tasks.
+      </p>
+      <p>
+        If you are excited about robot manipulation, tactile sensing, or robot learning,
+        please feel free to reach out. I am always happy to chat with self-motivated
+        students and collaborators from Cornell and beyond.
+      </p>
+    </div>
+  </section>
+
+  <section class="section shell" id="publications">
+    <div class="section-heading">
+      <p class="eyebrow">Publications</p>
+      <h2>Selected publications.</h2>
+      <p class="muted">Equal contribution is marked with *.</p>
+    </div>
+    <div class="publication-list">
+      {publications.map((publication) => <PublicationCard publication={publication} />)}
+    </div>
+  </section>
+
+  <section class="section shell" id="teaching">
+    <div class="section-heading">
+      <p class="eyebrow">Teaching</p>
+      <h2>Teaching experience.</h2>
+    </div>
+    <div class="timeline">
+      {
+        teaching.map((entry) => (
+          <article class="timeline-item">
+            <time>{entry.term}</time>
+            <div>
+              <h3>{entry.course}</h3>
+              <p class="muted">
+                <strong>{entry.role}</strong> · {entry.institution}
+              </p>
+              {entry.description && <p style="margin-top: 0.45rem;">{entry.description}</p>}
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="section shell" id="misc">
+    <div class="section-heading">
+      <p class="eyebrow">Misc</p>
+      <h2>A few fun facts.</h2>
+    </div>
+    <div class="prose">
+      <p>
+        I was born and raised in Shenzhen in southern China, right next to Hong Kong.
+        Whenever I travel internationally, I usually fly out of HKG, and I have taken
+        the HKG-JFK route many times. Spoiler alert: not fun.
+      </p>
+      <p>
+        My Chinese name is 金聖苗 (金圣苗). My preferred English name, "Samuel," sounds
+        similar to "Shengmiao," and my mom picked it from the Bible. The name "Leumas"
+        is inspired by Horace Miner's work <em>Body Ritual Among the Nacirema</em>.
+      </p>
+      <p>
+        Outside of research, I enjoy reading, cooking, traveling, and playing or watching
+        sports, including esports.
+      </p>
+    </div>
+  </section>
+</BaseLayout>
