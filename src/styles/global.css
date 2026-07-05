@@ -490,6 +490,10 @@ p {
     min-height: auto;
   }
 
+  .hero__card {
+    order: -1;
+  }
+
   .grid {
     grid-template-columns: 1fr;
   }
