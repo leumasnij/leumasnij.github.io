@@ -381,20 +381,6 @@ p {
   font-weight: 800;
 }
 
-.tag-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.3rem;
-}
-
-.tag-list span {
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  color: var(--muted);
-  font-size: 0.74rem;
-  padding: 0.2rem 0.45rem;
-}
-
 .link-row a,
 .social-links a {
   background: var(--accent-soft);

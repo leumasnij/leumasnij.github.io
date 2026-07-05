@@ -19,7 +19,6 @@ export type Publication = {
   authors: Author[];
   links: PublicationLink[];
   award?: string;
-  tags: string[];
 };
 
 export const publications: Publication[] = [
@@ -46,7 +45,6 @@ export const publications: Publication[] = [
       { label: "Project", href: "https://leumasnij.github.io/double_guessing/" },
       { label: "Video", href: "https://youtu.be/ZNsIUE29w_c" },
     ],
-    tags: ["active perception", "tactile sensing", "manipulation"],
   },
   {
     title: "Sensor-Invariant Tactile Representation",
@@ -71,7 +69,6 @@ export const publications: Publication[] = [
       { label: "Paper", href: "https://arxiv.org/pdf/2502.19638" },
       { label: "Project", href: "https://hgupt3.github.io/sitr/" },
     ],
-    tags: ["representation learning", "tactile sensing", "sim-to-real"],
   },
   {
     title: "An Intelligent Robotic System for Perceptive Pancake Batter Stirring and Precise Pouring",
@@ -98,7 +95,6 @@ export const publications: Publication[] = [
       { label: "Project", href: "https://luoxinyuan.github.io/pancake/" },
     ],
     award: "Best Entertainment and Amusement Papers Finalist",
-    tags: ["robot cooking", "manipulation", "system integration"],
   },
   {
     title:
@@ -124,6 +120,5 @@ export const publications: Publication[] = [
       { label: "Paper", href: "https://tx-leo.github.io/data/ICRA2025_DoorBot.pdf" },
       { label: "Project", href: "https://tx-leo.github.io/DoorBot/" },
     ],
-    tags: ["haptic feedback", "task planning", "manipulation"],
   },
 ];

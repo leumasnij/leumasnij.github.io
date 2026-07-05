@@ -37,9 +37,6 @@ const { publication, featured = false } = Astro.props;
       }
     </p>
     {publication.award && <p class="publication-card__award">{publication.award}</p>}
-    <div class="tag-list" aria-label="Research tags">
-      {publication.tags.map((tag) => <span>{tag}</span>)}
-    </div>
     <div class="link-row">
       {publication.links.map((link) => <a href={link.href}>{link.label}</a>)}
     </div>
