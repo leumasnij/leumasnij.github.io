@@ -12,7 +12,7 @@ export const site = {
     location: "Ithaca, NY",
     email: "leumasnij@cs.cornell.edu",
     avatar: "/images/avatar.png",
-    bio: "Robotics Ph.D. student at Cornell, advised by Tapomayukh Bhattacharjee and Preston Culbertson. B.S. in Electrical Engineering from UIUC.",
+    bio: "Robotics Ph.D. student at Cornell, working on Contact-Rich Manipulation and Robot Learning.",
   },
   socials: [
     {
