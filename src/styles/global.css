@@ -1,14 +1,14 @@
 :root {
   color-scheme: light;
-  --bg: #fbf4df;
-  --surface: #fffaf0;
-  --surface-soft: #f4ead2;
-  --text: #2f261b;
-  --muted: #6f6253;
-  --line: #dfcfaa;
-  --accent: #9a6a22;
-  --accent-dark: #6f4a13;
-  --accent-soft: #f3e5bf;
+  --bg: #fffaf0;
+  --surface: #ffffff;
+  --surface-soft: #f7f3ea;
+  --text: #1f2933;
+  --muted: #667085;
+  --line: #e7dfcf;
+  --accent: #7c5b28;
+  --accent-dark: #5f4219;
+  --accent-soft: #f3ead8;
   --cornell: #b31b1b;
   --shadow: none;
   --radius-lg: 12px;
@@ -27,9 +27,7 @@ html {
 
 body {
   margin: 0;
-  background:
-    linear-gradient(rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.08)),
-    var(--bg);
+  background: var(--bg);
   color: var(--text);
   font-size: 15px;
   line-height: 1.55;
@@ -100,7 +98,7 @@ p {
   top: 0;
   z-index: 20;
   border-bottom: 1px solid var(--line);
-  background: rgba(251, 244, 223, 0.96);
+  background: rgba(255, 250, 240, 0.96);
   backdrop-filter: blur(10px);
 }
 
@@ -190,7 +188,7 @@ p {
 .card,
 .publication-card,
 .resource-frame {
-  background: rgba(255, 250, 240, 0.9);
+  background: rgba(255, 255, 255, 0.9);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
