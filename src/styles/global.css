@@ -1,14 +1,14 @@
 :root {
   color-scheme: light;
-  --bg: #fffaf0;
+  --bg: #fff5f8;
   --surface: #ffffff;
-  --surface-soft: #f7f3ea;
+  --surface-soft: #fbf1f5;
   --text: #1f2933;
   --muted: #667085;
-  --line: #e7dfcf;
+  --line: #ead9df;
   --accent: #7c5b28;
   --accent-dark: #5f4219;
-  --accent-soft: #f3ead8;
+  --accent-soft: #f9e8ef;
   --cornell: #b31b1b;
   --shadow: none;
   --radius-lg: 12px;
@@ -98,7 +98,7 @@ p {
   top: 0;
   z-index: 20;
   border-bottom: 1px solid var(--line);
-  background: rgba(255, 250, 240, 0.96);
+  background: rgba(255, 245, 248, 0.96);
   backdrop-filter: blur(10px);
 }
 
