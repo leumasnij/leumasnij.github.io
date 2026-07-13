@@ -42,7 +42,7 @@ export const publications: Publication[] = [
     ],
     links: [
       { label: "Paper", href: "https://arxiv.org/pdf/2502.02663" },
-      { label: "Project", href: "https://leumasnij.github.io/double_guessing/" },
+      { label: "Website", href: "https://leumasnij.github.io/double_guessing/" },
       { label: "Video", href: "https://youtu.be/ZNsIUE29w_c" },
     ],
   },
@@ -67,7 +67,7 @@ export const publications: Publication[] = [
     ],
     links: [
       { label: "Paper", href: "https://arxiv.org/pdf/2502.19638" },
-      { label: "Project", href: "https://hgupt3.github.io/sitr/" },
+      { label: "Website", href: "https://hgupt3.github.io/sitr/" },
     ],
   },
   {
@@ -92,7 +92,7 @@ export const publications: Publication[] = [
         href: "https://www.youtube.com/watch?si=ikU3lOzVro_94tGz&v=-295mNAnFLk&feature=youtu.be",
       },
       { label: "Bilibili", href: "https://www.bilibili.com/video/BV1qChee8Ewg" },
-      { label: "Project", href: "https://luoxinyuan.github.io/pancake/" },
+      { label: "Website", href: "https://luoxinyuan.github.io/pancake/" },
     ],
     award: "Best Entertainment and Amusement Papers Finalist",
   },
@@ -118,7 +118,7 @@ export const publications: Publication[] = [
     ],
     links: [
       { label: "Paper", href: "https://tx-leo.github.io/data/ICRA2025_DoorBot.pdf" },
-      { label: "Project", href: "https://tx-leo.github.io/DoorBot/" },
+      { label: "Website", href: "https://tx-leo.github.io/DoorBot/" },
     ],
   },
 ];
