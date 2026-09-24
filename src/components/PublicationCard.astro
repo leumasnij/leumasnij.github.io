@@ -10,12 +10,14 @@ const { publication, featured = false } = Astro.props;
 ---
 
 <article class:list={["publication-card", featured ? "publication-card--featured" : ""]}>
-  <img
-    class="publication-card__image"
-    src={publication.image}
-    alt={publication.imageAlt}
-    loading="lazy"
-  />
+  <div class="publication-card__media">
+    <img
+      class="publication-card__image"
+      src={publication.image}
+      alt={publication.imageAlt}
+      loading="lazy"
+    />
+  </div>
   <div class="publication-card__body">
     <div class="eyebrow">{publication.venue} {publication.year}</div>
     <h2>{publication.title}</h2>
