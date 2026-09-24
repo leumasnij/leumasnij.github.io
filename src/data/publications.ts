@@ -21,7 +21,33 @@ export type Publication = {
   award?: string;
 };
 
-export const publications: Publication[] = [
+export const publications: Publication[] = [{
+  title: "\textsc{From Hand to Hand}: A Shared Wearable Interface and Functional Benchmark for Dexterous Manipulation",
+  venue: "In Submission",
+  year: 2026,
+  image: "/images/wudi.gif",
+  imageAlt: "A Wearable Unified Dexterous Interface (WUDI) for In-the-wild Data Collection.",
+  authors: [
+    { name: "Qiandao Liu", href: "https://qiandao-liu.github.io/", equalContribution: true },
+    { name: "Shengmiao Samuel Jin", isSelf: true, equalContribution: true },
+    { name: "Laura Ren", href: "https://www.linkedin.com/in/laura-ren-0b66b42bb/" },
+    { name: "Tapomayukh Bhattacharjee", href: "https://sites.google.com/site/tapomayukh",},
+  ],
+  links: [ ],
+},
+{
+  title: "KITE: Decoupling Kinematics and Interaction for Zero-Shot Cross-Embodiment Manipulation",
+  venue: "In Submission",
+  year: 2026,
+  image: "/images/kite.gif",
+  imageAlt: "Cross-embodiment manipulation with KITE.",
+  authors: [
+    { name: "Qianxu Wang", href: "https://qianxu.wang/", equalContribution: true },
+    { name: "Shengmiao Samuel Jin", isSelf: true, equalContribution: true },
+    { name: "Kuan Fang", href: "https://kuanfang.github.io/",},
+  ],
+  links: [ ],
+},
   {
     title:
       "Learning to Double Guess: An Active Perception Approach for Estimating the Center of Mass of Arbitrary Objects",
@@ -44,30 +70,6 @@ export const publications: Publication[] = [
       { label: "Paper", href: "https://arxiv.org/pdf/2502.02663" },
       { label: "Website", href: "https://leumasnij.github.io/double_guessing/" },
       { label: "Video", href: "https://youtu.be/ZNsIUE29w_c" },
-    ],
-  },
-  {
-    title: "Sensor-Invariant Tactile Representation",
-    venue: "International Conference on Learning Representations (ICLR)",
-    year: 2025,
-    image: "/images/sitr.png",
-    imageAlt: "Sensor-invariant tactile representation overview.",
-    authors: [
-      { name: "Harsh Gupta", href: "https://hgupt3.github.io", equalContribution: true },
-      {
-        name: "Yuchen Mo",
-        href: "https://scholar.google.com/citations?user=zzpPyQwAAAAJ&hl=en",
-        equalContribution: true,
-      },
-      { name: "Shengmiao Jin", isSelf: true },
-      {
-        name: "Wenzhen Yuan",
-        href: "https://siebelschool.illinois.edu/about/people/all-faculty/yuanwz",
-      },
-    ],
-    links: [
-      { label: "Paper", href: "https://arxiv.org/pdf/2502.19638" },
-      { label: "Website", href: "https://hgupt3.github.io/sitr/" },
     ],
   },
   {
@@ -95,30 +97,5 @@ export const publications: Publication[] = [
       { label: "Website", href: "https://luoxinyuan.github.io/pancake/" },
     ],
     award: "Best Entertainment and Amusement Papers Finalist",
-  },
-  {
-    title:
-      "DoorBot: Closed-Loop Task Planning and Manipulation for Door Opening in the Wild with Haptic Feedback",
-    venue: "IEEE International Conference on Robotics and Automation (ICRA)",
-    year: 2025,
-    image: "/images/doorbot.gif",
-    imageAlt: "DoorBot opening a door with haptic feedback.",
-    authors: [
-      { name: "Zhi Wang", href: "https://tx-leo.github.io", equalContribution: true },
-      {
-        name: "Yuchen Mo",
-        href: "https://scholar.google.com/citations?user=zzpPyQwAAAAJ&hl=en",
-        equalContribution: true,
-      },
-      { name: "Shengmiao Jin", isSelf: true },
-      {
-        name: "Wenzhen Yuan",
-        href: "https://siebelschool.illinois.edu/about/people/all-faculty/yuanwz",
-      },
-    ],
-    links: [
-      { label: "Paper", href: "https://tx-leo.github.io/data/ICRA2025_DoorBot.pdf" },
-      { label: "Website", href: "https://tx-leo.github.io/DoorBot/" },
-    ],
   },
 ];
