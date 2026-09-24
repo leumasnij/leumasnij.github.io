@@ -1,0 +1,15 @@
+# This repo is an Astro site, not Jekyll.
+# GitHub Pages must deploy via GitHub Actions:
+# Settings → Pages → Build and deployment → Source: GitHub Actions
+#
+# Keep this file so the default Jekyll builder does not try to parse Astro source.
+exclude:
+  - src
+  - node_modules
+  - dist
+  - .github
+  - package.json
+  - package-lock.json
+  - astro.config.mjs
+  - tsconfig.json
+  - README.md
