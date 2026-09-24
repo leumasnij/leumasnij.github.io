@@ -42,8 +42,8 @@ export const publications: Publication[] = [{
   image: "/images/kite.gif",
   imageAlt: "Cross-embodiment manipulation with KITE.",
   authors: [
-    { name: "Qianxu Wang", href: "https://qianxu.wang/" },
-    { name: "Shengmiao Samuel Jin", isSelf: true, },
+    { name: "Qianxu Wang", href: "https://qianxu.wang/", equalContribution: false },
+    { name: "Shengmiao Samuel Jin", isSelf: true, equalContribution: false },
     { name: "Kuan Fang", href: "https://kuanfang.github.io/",},
   ],
   links: [ ],
