@@ -22,7 +22,7 @@ export type Publication = {
 };
 
 export const publications: Publication[] = [{
-  title: "\textsc{From Hand to Hand}: A Shared Wearable Interface and Functional Benchmark for Dexterous Manipulation",
+  title: "From Hand to Hand: A Shared Wearable Interface and Functional Benchmark for Dexterous Manipulation",
   venue: "In Submission",
   year: 2026,
   image: "/images/wudi.gif",
