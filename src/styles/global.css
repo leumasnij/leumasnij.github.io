@@ -349,7 +349,8 @@ p {
 
 .publication-card__image {
   width: 100%;
-  height: 130px;
+  aspect-ratio: 16 / 9;
+  height: auto;
   object-fit: cover;
   border-radius: 8px;
   background: var(--surface-soft);
@@ -485,8 +486,7 @@ p {
   }
 
   .publication-card__image {
-    height: auto;
-    max-height: 260px;
+    aspect-ratio: 16 / 9;
   }
 
   .news-item,
