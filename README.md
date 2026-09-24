@@ -1,19 +1,32 @@
 # Shengmiao Jin Academic Website
 
-This is a static academic website built with [Astro](https://astro.build/) and deployed to GitHub Pages.
+Astro site deployed as static files to GitHub Pages (`master` branch root).
 
-## Commands
+## Local development
 
 ```sh
 npm install
 npm run dev
-npm run build
 ```
 
-The main content lives in:
+## Publish to GitHub Pages
 
-- `src/data/site.ts` for profile, navigation, research themes, and news
-- `src/data/publications.ts` for publication cards
-- `src/data/teaching.ts` for teaching history
-- `src/pages/` for top-level pages
-- `public/` for static assets such as images and CV files
+After editing content under `src/` or `public/`, rebuild and copy the output to the repo root, then commit:
+
+```sh
+npm run build
+npm run publish:static
+git add -A
+git commit -m "Update site"
+git push
+```
+
+`publish:static` copies `dist/` into the repo root (`index.html`, `_astro/`, `images/`, etc.) so GitHub Pages can serve the site without Jekyll.
+
+## Content
+
+- `src/data/site.ts` — profile, navigation, socials
+- `src/data/publications.ts` — publications
+- `src/data/teaching.ts` — teaching
+- `src/pages/` — page content
+- `public/` — source assets (copied into the build)

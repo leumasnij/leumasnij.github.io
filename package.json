@@ -8,7 +8,8 @@
     "start": "ASTRO_TELEMETRY_DISABLED=1 astro dev",
     "build": "ASTRO_TELEMETRY_DISABLED=1 astro check && ASTRO_TELEMETRY_DISABLED=1 astro build",
     "preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview",
-    "check": "ASTRO_TELEMETRY_DISABLED=1 astro check"
+    "check": "ASTRO_TELEMETRY_DISABLED=1 astro check",
+    "publish:static": "npm run build && rm -rf _astro files images resources 404.html index.html .nojekyll && cp -R dist/. ."
   },
   "dependencies": {
     "@astrojs/check": "latest",
