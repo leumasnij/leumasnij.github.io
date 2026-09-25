@@ -426,11 +426,10 @@ html.portrait-viewer-open {
 
 .portrait-full-frame {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  width: min(420px, 86vw);
-  height: min(525px, 78dvh);
-  transform: translate(-50%, -50%);
+  left: 0;
+  top: 0;
+  width: 280px;
+  height: 350px;
   background: #fffdfa;
   border-radius: 3px;
   outline: 9px solid #fffdfa;
@@ -438,6 +437,7 @@ html.portrait-viewer-open {
     0 0 0 10px rgba(255, 255, 255, 0.55),
     0 26px 80px -15px rgba(61, 49, 42, 0.28);
   overflow: hidden;
+  will-change: left, top, width, height;
 }
 
 .portrait-full-image {
@@ -503,23 +503,24 @@ html.portrait-viewer-open {
 }
 
 .portrait-viewer-arrow--prev {
-  left: calc(50% - min(210px, 43vw) - 52px);
+  left: 10px;
 }
 
 .portrait-viewer-arrow--next {
-  right: calc(50% - min(210px, 43vw) - 52px);
+  right: 10px;
+}
+
+.portrait-viewer.is-transitioning .portrait-close,
+.portrait-viewer.is-transitioning .portrait-viewer-arrow {
+  opacity: 0;
+  pointer-events: none;
 }
 
 @media (max-width: 640px) {
-  .portrait-full-frame {
-    width: min(340px, 84vw);
-    height: min(425px, 68dvh);
-  }
-
   .portrait-viewer-arrow--prev,
   .portrait-viewer-arrow--next {
     top: auto;
-    bottom: max(18px, calc(50% - min(212px, 34dvh) - 52px));
+    bottom: 10px;
     transform: none;
   }
 

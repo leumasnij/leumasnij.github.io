@@ -99,6 +99,7 @@ const stack = portraits.slice(0, 6);
     const next = root.querySelector(".portrait-arrow--next");
     const expand = root.querySelector(".portrait-expand");
     const viewer = root.querySelector(".portrait-viewer");
+    const frame = root.querySelector(".portrait-full-frame");
     const fullImage = root.querySelector(".portrait-full-image");
     const close = root.querySelector(".portrait-close");
     const viewerPrev = root.querySelector(".portrait-viewer-arrow--prev");
@@ -108,6 +109,7 @@ const stack = portraits.slice(0, 6);
     if (!(prev instanceof HTMLButtonElement) || !(next instanceof HTMLButtonElement)) return;
     if (!(expand instanceof HTMLButtonElement)) return;
     if (!(viewer instanceof HTMLDialogElement)) return;
+    if (!(frame instanceof HTMLElement)) return;
     if (!(fullImage instanceof HTMLImageElement)) return;
     if (!(close instanceof HTMLButtonElement)) return;
     if (!(viewerPrev instanceof HTMLButtonElement) || !(viewerNext instanceof HTMLButtonElement)) return;
@@ -121,6 +123,56 @@ const stack = portraits.slice(0, 6);
     if (prints.length === 0 || images.length === 0) return;
 
     let current = 0;
+    let animating = false;
+    let smallRect = { left: 0, top: 0, width: 0, height: 0 };
+    let largeRect = { left: 0, top: 0, width: 0, height: 0 };
+
+    const clamp = (value: number, min: number, max: number) => Math.max(min, Math.min(max, value));
+
+    const px = (rect: { left: number; top: number; width: number; height: number }) => ({
+      left: `${rect.left}px`,
+      top: `${rect.top}px`,
+      width: `${rect.width}px`,
+      height: `${rect.height}px`,
+    });
+
+    const getSmallRect = () => {
+      const windowEl = prints[current]?.querySelector(".portrait-window") ?? stack;
+      const rect = windowEl.getBoundingClientRect();
+      return {
+        left: rect.left,
+        top: rect.top,
+        width: rect.width,
+        height: rect.height,
+      };
+    };
+
+    const getLargeRect = (origin: { left: number; top: number; width: number; height: number }) => {
+      const margin = 24;
+      const maxWidth = Math.min(480, window.innerWidth - margin * 2);
+      const maxHeight = Math.min(600, window.innerHeight - margin * 2);
+      const aspect = 4 / 5;
+
+      let width = maxWidth;
+      let height = width / aspect;
+      if (height > maxHeight) {
+        height = maxHeight;
+        width = height * aspect;
+      }
+
+      const centerX = origin.left + origin.width / 2;
+      const centerY = origin.top + origin.height / 2;
+
+      return {
+        width,
+        height,
+        left: clamp(centerX - width / 2, margin, window.innerWidth - margin - width),
+        top: clamp(centerY - height / 2, margin, window.innerHeight - margin - height),
+      };
+    };
+
+    const prefersReducedMotion = () =>
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     const render = () => {
       prints.forEach((print, index) => {
@@ -145,22 +197,69 @@ const stack = portraits.slice(0, 6);
       }
     };
 
+    const layoutViewer = () => {
+      smallRect = getSmallRect();
+      largeRect = getLargeRect(smallRect);
+      Object.assign(frame.style, px(largeRect));
+    };
+
+    const animateFrame = async (
+      from: { left: number; top: number; width: number; height: number },
+      to: { left: number; top: number; width: number; height: number },
+    ) => {
+      Object.assign(frame.style, px(to));
+      if (prefersReducedMotion()) return;
+
+      await frame.animate([px(from), px(to)], {
+        duration: 520,
+        easing: "cubic-bezier(0.22, 1, 0.36, 1)",
+      }).finished;
+    };
+
     const go = (delta: number) => {
       current = (current + delta + prints.length) % prints.length;
       render();
+      if (viewer.open) layoutViewer();
     };
 
-    const openViewer = () => {
+    const openViewer = async () => {
+      if (animating || viewer.open) return;
+      animating = true;
       render();
-      document.documentElement.classList.add("portrait-viewer-open");
-      viewer.showModal();
-      close.focus();
+
+      try {
+        await fullImage.decode().catch(() => undefined);
+        smallRect = getSmallRect();
+        largeRect = getLargeRect(smallRect);
+
+        Object.assign(frame.style, px(smallRect));
+        document.documentElement.classList.add("portrait-viewer-open");
+        viewer.showModal();
+        viewer.classList.add("is-transitioning");
+
+        await animateFrame(smallRect, largeRect);
+        close.focus();
+      } finally {
+        viewer.classList.remove("is-transitioning");
+        animating = false;
+      }
     };
 
-    const closeViewer = () => {
-      if (!viewer.open) return;
-      viewer.close();
-      document.documentElement.classList.remove("portrait-viewer-open");
+    const closeViewer = async () => {
+      if (!viewer.open || animating) return;
+      animating = true;
+      viewer.classList.add("is-closing", "is-transitioning");
+
+      try {
+        smallRect = getSmallRect();
+        await animateFrame(largeRect, smallRect);
+        viewer.close();
+      } finally {
+        viewer.classList.remove("is-closing", "is-transitioning");
+        document.documentElement.classList.remove("portrait-viewer-open");
+        animating = false;
+        expand.focus({ preventScroll: true });
+      }
     };
 
     prev.addEventListener("click", (event) => {
@@ -185,22 +284,31 @@ const stack = portraits.slice(0, 6);
 
     expand.addEventListener("click", (event) => {
       event.stopPropagation();
-      openViewer();
+      void openViewer();
     });
 
-    stack.addEventListener("click", () => openViewer());
+    stack.addEventListener("click", () => {
+      void openViewer();
+    });
 
     stack.addEventListener("keydown", (event) => {
       if (event.key === "Enter" || event.key === " ") {
         event.preventDefault();
-        openViewer();
+        void openViewer();
       }
     });
 
-    close.addEventListener("click", () => closeViewer());
+    close.addEventListener("click", () => {
+      void closeViewer();
+    });
+
+    viewer.addEventListener("cancel", (event) => {
+      event.preventDefault();
+      void closeViewer();
+    });
 
     viewer.addEventListener("click", (event) => {
-      if (event.target === viewer) closeViewer();
+      if (event.target === viewer) void closeViewer();
     });
 
     viewer.addEventListener("close", () => {
@@ -209,7 +317,7 @@ const stack = portraits.slice(0, 6);
 
     document.addEventListener("keydown", (event) => {
       if (!viewer.open) return;
-      if (event.key === "Escape") closeViewer();
+      if (event.key === "Escape") void closeViewer();
       if (event.key === "ArrowLeft") {
         event.preventDefault();
         go(-1);
@@ -218,6 +326,10 @@ const stack = portraits.slice(0, 6);
         event.preventDefault();
         go(1);
       }
+    });
+
+    window.addEventListener("resize", () => {
+      if (viewer.open && !animating) layoutViewer();
     });
 
     render();
