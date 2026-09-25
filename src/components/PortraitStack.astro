@@ -18,7 +18,7 @@ const stack = portraits.slice(0, 6);
 
 <aside class="portrait" aria-label="Profile">
   <div class="portrait-stage">
-    <button class="portrait-stack" type="button" aria-label="Next portrait">
+    <div class="portrait-stack" role="img" aria-label="Portrait photos">
       {
         stack.map((portrait, index) => (
           <span
@@ -40,6 +40,16 @@ const stack = portraits.slice(0, 6);
           </span>
         ))
       }
+    </div>
+    <button class="portrait-arrow portrait-arrow--prev" type="button" aria-label="Previous portrait">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="m14 6-6 6 6 6"></path>
+      </svg>
+    </button>
+    <button class="portrait-arrow portrait-arrow--next" type="button" aria-label="Next portrait">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="m10 6 6 6-6 6"></path>
+      </svg>
     </button>
   </div>
   <div class="portrait-dots" aria-hidden="true">
@@ -54,11 +64,17 @@ const stack = portraits.slice(0, 6);
 
 <script>
   function initPortraitStack() {
-    const stack = document.querySelector(".portrait-stack");
-    if (!(stack instanceof HTMLButtonElement)) return;
+    const root = document.querySelector(".portrait");
+    if (!(root instanceof HTMLElement)) return;
+
+    const stack = root.querySelector(".portrait-stack");
+    const prev = root.querySelector(".portrait-arrow--prev");
+    const next = root.querySelector(".portrait-arrow--next");
+    if (!(stack instanceof HTMLElement)) return;
+    if (!(prev instanceof HTMLButtonElement) || !(next instanceof HTMLButtonElement)) return;
 
     const prints = Array.from(stack.querySelectorAll(".portrait-print"));
-    const dots = Array.from(document.querySelectorAll(".portrait-dot"));
+    const dots = Array.from(root.querySelectorAll(".portrait-dot"));
     if (prints.length < 2) return;
 
     let current = 0;
@@ -80,9 +96,32 @@ const stack = portraits.slice(0, 6);
       });
     };
 
-    stack.addEventListener("click", () => {
-      current = (current + 1) % prints.length;
+    const go = (delta: number) => {
+      current = (current + delta + prints.length) % prints.length;
       render();
+    };
+
+    prev.addEventListener("click", (event) => {
+      event.stopPropagation();
+      go(-1);
+    });
+
+    next.addEventListener("click", (event) => {
+      event.stopPropagation();
+      go(1);
+    });
+
+    stack.addEventListener("click", () => go(1));
+
+    root.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        go(-1);
+      }
+      if (event.key === "ArrowRight") {
+        event.preventDefault();
+        go(1);
+      }
     });
 
     render();
