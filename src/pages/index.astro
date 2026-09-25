@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import PortraitStack from "../components/PortraitStack.astro";
 import PublicationCard from "../components/PublicationCard.astro";
 import { publications } from "../data/publications";
 import { site } from "../data/site";
@@ -31,14 +32,13 @@ import { teaching } from "../data/teaching";
         {site.socials.map((social) => <a href={social.href}>{social.label}</a>)}
       </div>
     </div>
-    <aside class="hero__card" aria-label="Profile">
-      <img src={site.author.avatar} alt="Portrait of Shengmiao Jin" />
-      <div class="hero__meta">
-        <strong>{site.author.name}</strong>
-        <span>{site.author.role} · {site.author.affiliation}</span>
-        <span>{site.author.location}</span>
-      </div>
-    </aside>
+    <PortraitStack
+      portraits={site.portraits}
+      name={site.author.name}
+      role={site.author.role}
+      affiliation={site.author.affiliation}
+      location={site.author.location}
+    />
   </section>
 
   <section class="section shell" id="research">

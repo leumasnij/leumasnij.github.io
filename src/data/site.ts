@@ -11,9 +11,31 @@ export const site = {
     affiliation: "Cornell University",
     location: "Ithaca, NY",
     email: "leumasnij@cs.cornell.edu",
-    avatar: "/images/avatar.png",
+    avatar: "/images/portraits/portrait-1.jpg",
     bio: "Robotics Ph.D. student at Cornell, working on Contact-Rich Manipulation and Robot Learning.",
   },
+  portraits: [
+    {
+      src: "/images/portraits/portrait-1.jpg",
+      alt: "Portrait of Shengmiao Jin resting his chin on his hand",
+    },
+    {
+      src: "/images/portraits/portrait-2.jpg",
+      alt: "Shengmiao Jin outdoors in an Illinois hoodie",
+    },
+    {
+      src: "/images/portraits/portrait-3.jpg",
+      alt: "Shengmiao Jin giving a thumbs up outdoors",
+    },
+    {
+      src: "/images/portraits/portrait-4.jpg",
+      alt: "Shengmiao Jin in graduation attire holding a robotic arm",
+    },
+    {
+      src: "/images/portraits/portrait-5.jpg",
+      alt: "Shengmiao Jin in a candid outdoor portrait",
+    },
+  ],
   socials: [
     {
       label: "Email",

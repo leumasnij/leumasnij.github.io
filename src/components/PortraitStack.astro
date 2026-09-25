@@ -1,0 +1,93 @@
+---
+export type Portrait = {
+  src: string;
+  alt: string;
+};
+
+type Props = {
+  portraits: Portrait[];
+  name: string;
+  role: string;
+  affiliation: string;
+  location: string;
+};
+
+const { portraits, name, role, affiliation, location } = Astro.props;
+const stack = portraits.slice(0, 6);
+---
+
+<aside class="portrait" aria-label="Profile">
+  <div class="portrait-stage">
+    <button class="portrait-stack" type="button" aria-label="Next portrait">
+      {
+        stack.map((portrait, index) => (
+          <span
+            class="portrait-print"
+            data-position={String(Math.min(index, 3))}
+            data-photo={String(index)}
+            aria-hidden={index === 0 ? undefined : "true"}
+          >
+            <span class="portrait-window">
+              <img
+                src={portrait.src}
+                alt={portrait.alt}
+                width="800"
+                height="1000"
+                draggable="false"
+                loading={index === 0 ? "eager" : "lazy"}
+              />
+            </span>
+          </span>
+        ))
+      }
+    </button>
+  </div>
+  <div class="portrait-dots" aria-hidden="true">
+    {stack.map((_, index) => <span class:list={["portrait-dot", index === 0 ? "is-current" : ""]} />)}
+  </div>
+  <div class="hero__meta">
+    <strong>{name}</strong>
+    <span>{role} · {affiliation}</span>
+    <span>{location}</span>
+  </div>
+</aside>
+
+<script>
+  function initPortraitStack() {
+    const stack = document.querySelector(".portrait-stack");
+    if (!(stack instanceof HTMLButtonElement)) return;
+
+    const prints = Array.from(stack.querySelectorAll(".portrait-print"));
+    const dots = Array.from(document.querySelectorAll(".portrait-dot"));
+    if (prints.length < 2) return;
+
+    let current = 0;
+
+    const render = () => {
+      prints.forEach((print, index) => {
+        const offset = (index - current + prints.length) % prints.length;
+        print.setAttribute("data-position", String(Math.min(offset, 3)));
+        print.setAttribute("data-photo", String(index));
+        if (offset === 0) {
+          print.removeAttribute("aria-hidden");
+        } else {
+          print.setAttribute("aria-hidden", "true");
+        }
+      });
+
+      dots.forEach((dot, index) => {
+        dot.classList.toggle("is-current", index === current);
+      });
+    };
+
+    stack.addEventListener("click", () => {
+      current = (current + 1) % prints.length;
+      render();
+    });
+
+    render();
+  }
+
+  initPortraitStack();
+  document.addEventListener("astro:page-load", initPortraitStack);
+</script>
