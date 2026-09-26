@@ -64,6 +64,7 @@ export const site = {
     { label: "Publications", href: "/#publications" },
     { label: "Teaching", href: "/#teaching" },
     { label: "Misc", href: "/#misc" },
+    { label: "Gallery", href: "/gallery/" },
     { label: "CV", href: "/files/CV_SJ.pdf" },
     { label: "Resources", href: "/resources/" },
   ],

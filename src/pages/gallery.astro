@@ -1,0 +1,163 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { galleryPhotos } from "../data/gallery";
+---
+
+<BaseLayout
+  title="Gallery"
+  description="Photo gallery by Shengmiao Jin."
+>
+  <section class="page-header shell">
+    <p class="eyebrow">Gallery</p>
+    <h1>Gallery</h1>
+    <p class="lede">A selection of photographs.</p>
+  </section>
+
+  <section class="section--tight shell gallery" aria-label="Photo gallery">
+    <div class="photo-wall">
+      {
+        galleryPhotos.map((photo, index) => (
+          <figure class:list={["photo-tile", photo.wide ? "photo-tile--wide" : ""]}>
+            <button
+              class="photo-open"
+              type="button"
+              data-photo-index={String(index)}
+              aria-label={`Enlarge photograph: ${photo.alt}`}
+            >
+              <img
+                src={photo.src}
+                alt={photo.alt}
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="photo-expand" aria-hidden="true">↗</span>
+            </button>
+          </figure>
+        ))
+      }
+    </div>
+
+    <dialog class="photo-viewer" aria-label="Photograph viewer">
+      <figure class="photo-viewer__figure">
+        <div class="photo-viewer__toolbar">
+          <span class="photo-viewer__position" aria-live="polite"></span>
+          <button type="button" class="photo-viewer__close" aria-label="Close photograph">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m6 6 12 12M18 6 6 18"></path>
+            </svg>
+          </button>
+        </div>
+        <button type="button" class="photo-viewer__prev" aria-label="Previous photograph">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m14 6-6 6 6 6"></path>
+          </svg>
+        </button>
+        <button type="button" class="photo-viewer__next" aria-label="Next photograph">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m10 6 6 6-6 6"></path>
+          </svg>
+        </button>
+        <img class="photo-viewer__image" alt="" />
+      </figure>
+    </dialog>
+  </section>
+</BaseLayout>
+
+<script>
+  function initGallery() {
+    const root = document.querySelector(".gallery");
+    if (!(root instanceof HTMLElement) || root.dataset.galleryReady === "true") return;
+    root.dataset.galleryReady = "true";
+
+    const opens = Array.from(root.querySelectorAll(".photo-open"));
+    const viewer = root.querySelector(".photo-viewer");
+    const image = root.querySelector(".photo-viewer__image");
+    const position = root.querySelector(".photo-viewer__position");
+    const close = root.querySelector(".photo-viewer__close");
+    const prev = root.querySelector(".photo-viewer__prev");
+    const next = root.querySelector(".photo-viewer__next");
+
+    if (!(viewer instanceof HTMLDialogElement)) return;
+    if (!(image instanceof HTMLImageElement)) return;
+    if (!(position instanceof HTMLElement)) return;
+    if (!(close instanceof HTMLButtonElement)) return;
+    if (!(prev instanceof HTMLButtonElement) || !(next instanceof HTMLButtonElement)) return;
+    if (opens.length === 0) return;
+
+    const photos = opens.map((button) => {
+      const img = button.querySelector("img");
+      return {
+        src: img?.currentSrc || img?.src || "",
+        alt: img?.alt || "",
+      };
+    });
+
+    let current = 0;
+
+    const render = () => {
+      const photo = photos[current];
+      if (!photo) return;
+      image.src = photo.src;
+      image.alt = photo.alt;
+      position.textContent = `${current + 1} / ${photos.length}`;
+    };
+
+    const open = async (index: number) => {
+      current = index;
+      render();
+      document.documentElement.classList.add("photo-viewer-open");
+      viewer.showModal();
+      close.focus();
+    };
+
+    const closeViewer = () => {
+      if (!viewer.open) return;
+      viewer.close();
+      document.documentElement.classList.remove("photo-viewer-open");
+    };
+
+    const go = (delta: number) => {
+      current = (current + delta + photos.length) % photos.length;
+      render();
+    };
+
+    opens.forEach((button, index) => {
+      button.addEventListener("click", () => {
+        void open(index);
+      });
+    });
+
+    close.addEventListener("click", () => closeViewer());
+    prev.addEventListener("click", () => go(-1));
+    next.addEventListener("click", () => go(1));
+
+    viewer.addEventListener("cancel", (event) => {
+      event.preventDefault();
+      closeViewer();
+    });
+
+    viewer.addEventListener("click", (event) => {
+      if (event.target === viewer) closeViewer();
+    });
+
+    viewer.addEventListener("close", () => {
+      document.documentElement.classList.remove("photo-viewer-open");
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (!viewer.open) return;
+      if (event.key === "Escape") closeViewer();
+      if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        go(-1);
+      }
+      if (event.key === "ArrowRight") {
+        event.preventDefault();
+        go(1);
+      }
+    });
+  }
+
+  initGallery();
+  document.addEventListener("astro:page-load", initGallery);
+</script>
