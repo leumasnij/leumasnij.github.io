@@ -11,10 +11,14 @@ export const site = {
     affiliation: "Cornell University",
     location: "Ithaca, NY",
     email: "leumasnij@cs.cornell.edu",
-    avatar: "/images/portraits/portrait-1.jpg",
+    avatar: "/images/avatar.png",
     bio: "Robotics Ph.D. student at Cornell, working on Contact-Rich Manipulation and Robot Learning.",
   },
   portraits: [
+    {
+      src: "/images/avatar.png",
+      alt: "Headshot of Shengmiao Jin",
+    },
     {
       src: "/images/portraits/portrait-1.jpg",
       alt: "Portrait of Shengmiao Jin resting his chin on his hand",

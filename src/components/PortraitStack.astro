@@ -148,10 +148,12 @@ const stack = portraits.slice(0, 6);
     };
 
     const getLargeRect = (origin: { left: number; top: number; width: number; height: number }) => {
-      const margin = 24;
-      const maxWidth = Math.min(480, window.innerWidth - margin * 2);
-      const maxHeight = Math.min(600, window.innerHeight - margin * 2);
-      const aspect = 4 / 5;
+      const margin = 28;
+      const maxWidth = Math.min(920, window.innerWidth - margin * 2);
+      const maxHeight = Math.min(window.innerHeight - margin * 2, 900);
+      const naturalWidth = fullImage.naturalWidth || origin.width;
+      const naturalHeight = fullImage.naturalHeight || origin.height;
+      const aspect = naturalWidth / Math.max(naturalHeight, 1);
 
       let width = maxWidth;
       let height = width / aspect;
@@ -160,6 +162,7 @@ const stack = portraits.slice(0, 6);
         width = height * aspect;
       }
 
+      // Prefer keeping the expanded frame near the headshot, but stay on-screen.
       const centerX = origin.left + origin.width / 2;
       const centerY = origin.top + origin.height / 2;
 
@@ -219,7 +222,11 @@ const stack = portraits.slice(0, 6);
     const go = (delta: number) => {
       current = (current + delta + prints.length) % prints.length;
       render();
-      if (viewer.open) layoutViewer();
+      if (viewer.open) {
+        void fullImage.decode().catch(() => undefined).then(() => {
+          if (viewer.open) layoutViewer();
+        });
+      }
     };
 
     const openViewer = async () => {
