@@ -32,10 +32,6 @@ export const site = {
       alt: "Shengmiao Jin giving a thumbs up outdoors",
     },
     {
-      src: "/images/portraits/portrait-4.jpg",
-      alt: "Shengmiao Jin in graduation attire holding a robotic arm",
-    },
-    {
       src: "/images/portraits/portrait-5.jpg",
       alt: "Shengmiao Jin in a candid outdoor portrait",
     },
