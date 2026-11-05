@@ -7,6 +7,30 @@ type Props = {
 };
 
 const { publication, featured = false } = Astro.props;
+const inlineAward = publication.award?.startsWith("(") ? publication.award : undefined;
+const blockAward = inlineAward ? undefined : publication.award;
+
+const linkIcons: Record<string, string[]> = {
+  Paper: [
+    "M7 3.5h7.5L19 8v12.5a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1Zm7.25.75V8H18",
+  ],
+  Website: [
+    "M12 3.5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17Zm0 0c2.4 2.5 2.4 14.5 0 17-2.4-2.5-2.4-14.5 0-17ZM3.7 12h16.6",
+  ],
+  Video: [
+    "M5.5 7.5h8.5a1.5 1.5 0 0 1 1.5 1.5v6a1.5 1.5 0 0 1-1.5 1.5H5.5A1.5 1.5 0 0 1 4 15V9a1.5 1.5 0 0 1 1.5-1.5Zm11 2.2 3.5-2v9l-3.5-2",
+  ],
+  Hardware: [
+    "M12 15.25a3.25 3.25 0 1 0 0-6.5 3.25 3.25 0 0 0 0 6.5Z",
+    "M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c.26.604.852.998 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z",
+  ],
+  YouTube: [
+    "M5.5 7.5h8.5a1.5 1.5 0 0 1 1.5 1.5v6a1.5 1.5 0 0 1-1.5 1.5H5.5A1.5 1.5 0 0 1 4 15V9a1.5 1.5 0 0 1 1.5-1.5Zm11 2.2 3.5-2v9l-3.5-2",
+  ],
+  Bilibili: [
+    "M5.5 7.5h8.5a1.5 1.5 0 0 1 1.5 1.5v6a1.5 1.5 0 0 1-1.5 1.5H5.5A1.5 1.5 0 0 1 4 15V9a1.5 1.5 0 0 1 1.5-1.5Zm11 2.2 3.5-2v9l-3.5-2",
+  ],
+};
 ---
 
 <article class:list={["publication-card", featured ? "publication-card--featured" : ""]}>
@@ -19,8 +43,12 @@ const { publication, featured = false } = Astro.props;
     />
   </div>
   <div class="publication-card__body">
-    <div class="eyebrow">{publication.venue} {publication.year}</div>
     <h2>{publication.title}</h2>
+    <div class="eyebrow">
+      {publication.venue} {publication.year}
+      {inlineAward && <span class="publication-card__award"> {inlineAward}</span>}
+    </div>
+    {blockAward && <p class="publication-card__award">{blockAward}</p>}
     <p class="publication-card__authors">
       {
         publication.authors.map((author, index) => (
@@ -38,9 +66,24 @@ const { publication, featured = false } = Astro.props;
         ))
       }
     </p>
-    {publication.award && <p class="publication-card__award">{publication.award}</p>}
     <div class="link-row">
-      {publication.links.map((link) => <a href={link.href}>{link.label}</a>)}
+      {
+        publication.links.map((link) => {
+          const icon = linkIcons[link.label];
+          return (
+            <a href={link.href} class="pub-link">
+              {icon && (
+                <svg class="pub-link__icon" viewBox="0 0 24 24" aria-hidden="true">
+                  {icon.map((d) => (
+                    <path d={d}></path>
+                  ))}
+                </svg>
+              )}
+              <span>{link.label}</span>
+            </a>
+          );
+        })
+      }
     </div>
   </div>
 </article>

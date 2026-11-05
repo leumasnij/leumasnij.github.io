@@ -23,7 +23,7 @@ export type Publication = {
 
 export const publications: Publication[] = [{
   title: "From Hand to Hand: A Shared Wearable Interface and Functional Benchmark for Dexterous Manipulation",
-  venue: "In Submission",
+  venue: "Workshop on Dexterous Manipulation, CoRL",
   year: 2026,
   image: "/images/wudi.gif",
   imageAlt: "A Wearable Unified Dexterous Interface (WUDI) for In-the-wild Data Collection.",
@@ -33,11 +33,15 @@ export const publications: Publication[] = [{
     { name: "Laura Ren", href: "https://www.linkedin.com/in/laura-ren-0b66b42bb/" },
     { name: "Tapomayukh Bhattacharjee", href: "https://sites.google.com/site/tapomayukh",},
   ],
-  links: [ ],
+  links: [
+    { label: "Website", href: "https://emprise.cs.cornell.edu/wudi/" },
+    { label: "Paper", href: "https://emprise.cs.cornell.edu/wudi/WUDI_workshop.pdf" },
+    { label: "Hardware", href: "https://emprise.cs.cornell.edu/wudi/hardware/" },
+  ],
 },
 {
   title: "KITE: Decoupling Kinematics and Interaction for Zero-Shot Cross-Embodiment Manipulation",
-  venue: "In Submission",
+  venue: "Workshop on Dexterous Manipulation, CoRL",
   year: 2026,
   image: "/images/kite.gif",
   imageAlt: "Cross-embodiment manipulation with KITE.",
@@ -46,7 +50,12 @@ export const publications: Publication[] = [{
     { name: "Shengmiao Samuel Jin", isSelf: true, equalContribution: false },
     { name: "Kuan Fang", href: "https://kuanfang.github.io/",},
   ],
-  links: [ ],
+  links: [
+    { label: "Website", href: "https://kite-manip.github.io/" },
+    { label: "Paper", href: "https://arxiv.org/abs/2606.22113" },
+    { label: "Video", href: "https://kite-manip.github.io/#video-summary" },
+  ],
+  award: "(Oral)",
 },
   {
     title:

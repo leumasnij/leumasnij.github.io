@@ -450,6 +450,34 @@ html.portrait-viewer-open {
   user-select: none;
 }
 
+.portrait-full-meta {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: grid;
+  gap: 0.2rem;
+  padding: 1.75rem 0.85rem 0.75rem;
+  color: #fff;
+  background: linear-gradient(
+    to top,
+    rgba(20, 22, 20, 0.78) 0%,
+    rgba(20, 22, 20, 0.35) 55%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+.portrait-full-meta strong {
+  font-size: 0.95rem;
+}
+
+.portrait-full-meta span {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.8rem;
+}
+
 .portrait-close,
 .portrait-viewer-arrow {
   position: absolute;
@@ -512,7 +540,8 @@ html.portrait-viewer-open {
 }
 
 .portrait-viewer.is-transitioning .portrait-close,
-.portrait-viewer.is-transitioning .portrait-viewer-arrow {
+.portrait-viewer.is-transitioning .portrait-viewer-arrow,
+.portrait-viewer.is-transitioning .portrait-full-meta {
   opacity: 0;
   pointer-events: none;
 }
@@ -710,6 +739,14 @@ html.portrait-viewer-open {
   letter-spacing: -0.02em;
 }
 
+.publication-card__body > .eyebrow {
+  margin-top: -0.15rem;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
 .publication-card__authors {
   color: var(--muted);
 }
@@ -730,6 +767,23 @@ html.portrait-viewer-open {
   color: var(--accent-dark);
   padding: 0.35rem 0.55rem;
   font-size: 0.8rem;
+}
+
+.pub-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.pub-link__icon {
+  width: 0.9rem;
+  height: 0.9rem;
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .page-header {

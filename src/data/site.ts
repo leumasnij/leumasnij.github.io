@@ -16,24 +16,29 @@ export const site = {
   },
   portraits: [
     {
-      src: "/images/avatar.png",
-      alt: "Headshot of Shengmiao Jin",
+      src: "/images/portraits/natural.jpg",
+      alt: "Natural portrait of Shengmiao Jin",
+      location: "Urbana, IL",
     },
     {
-      src: "/images/portraits/portrait-1.jpg",
-      alt: "Portrait of Shengmiao Jin resting his chin on his hand",
+      src: "/images/avatar.png",
+      alt: "Headshot of Shengmiao Jin",
+      location: "Urbana, IL",
     },
     {
       src: "/images/portraits/portrait-2.jpg",
       alt: "Shengmiao Jin outdoors in an Illinois hoodie",
+      location: "Ithaca, NY",
     },
     {
       src: "/images/portraits/portrait-3.jpg",
       alt: "Shengmiao Jin giving a thumbs up outdoors",
+      location: "Pomona, IL",
     },
     {
       src: "/images/portraits/portrait-5.jpg",
       alt: "Shengmiao Jin in a candid outdoor portrait",
+      location: "New York, NY",
     },
   ],
   socials: [
